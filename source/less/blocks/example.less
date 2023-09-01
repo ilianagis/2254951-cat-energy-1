@@ -1,0 +1,27 @@
+.example {
+  .color(@gray);
+  padding: 25px 20px 40px 20px;
+}
+
+.example__text {
+  .text;
+}
+
+.example__title {
+  .title;
+}
+
+.example__photo {
+  position: relative;
+  display: flex;
+  flex-direction: inherit;
+  gap: 4px;
+}
+
+.example__curtain {
+  .color(@gray-special);
+  position: absolute;
+  width: 4px;
+  height: 256px;
+  right: 55%;
+}
