@@ -1,0 +1,38 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  .color(@white);
+  position: absolute;
+  padding: 4px 0;
+  border: none;
+  cursor: pointer;
+  right: 21px;
+  top: -49px;
+}
+
+.main-nav__toggle-item {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 24px;
+    background-color: #000000;
+    top: -8px;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 24px;
+    background-color: #000000;
+    top: 8px;
+  }
+}
