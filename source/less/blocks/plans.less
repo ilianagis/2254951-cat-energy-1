@@ -1,0 +1,85 @@
+.plan {
+  .color(@gray);
+  position: relative;
+  margin-bottom: 20px;
+  padding: 0 20px 18px;
+}
+
+.plans__list {
+  padding: 0 20px;
+}
+
+.plan__icon--slim {
+  content: "";
+  position: absolute;
+  background-image: url("../img/cat_slim.svg");
+  width: 50px;
+  height: 53px;
+  top: 22px;
+  left: 20px;
+}
+
+.plan__icon--pro {
+  content: "";
+  position: absolute;
+  background-image: url("../img/cat_pro.svg");
+  width: 67px;
+  height: 50px;
+  top: 26px;
+  left: 13px;
+}
+
+.plan__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 30px 70px;
+  white-space: nowrap;
+}
+
+.plan__text {
+  .text;
+  margin: 0;
+  margin-bottom: 42px;
+  &::after {
+    .color(@bottom-line);
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 1px;
+    bottom: 57px;
+    right: 20px;
+  }
+}
+
+.plan__link {
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.plan__link-arrow {
+  position: relative;
+  display: inline-block;
+  width: 17px;
+  color: #000000;
+  top: -6px;
+  left: 13px;
+  border-top: 2px solid #000000;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 16px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 6px solid #000000;
+    transform: translateX(1px);
+  }
+}
