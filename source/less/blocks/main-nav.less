@@ -1,5 +1,10 @@
 .main-nav {
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 12px;
+    margin-top: 14px;
+  }
 }
 
 .main-nav__toggle {
@@ -10,6 +15,10 @@
   cursor: pointer;
   right: 21px;
   top: -49px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__toggle-item {

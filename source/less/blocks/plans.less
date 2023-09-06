@@ -1,12 +1,21 @@
+.plans {
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px 45px;
+  }
+}
+
 .plan {
   .color(@gray);
   position: relative;
   margin-bottom: 20px;
   padding: 0 20px 18px;
-}
 
-.plans__list {
-  padding: 0 20px;
+  @media (min-width: @tablet-width) {
+    padding: 77px 316px 61px 52px;
+    margin-bottom: 30px;
+  }
 }
 
 .plan__icon--slim {
@@ -17,6 +26,16 @@
   height: 53px;
   top: 22px;
   left: 20px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/cat_slim-tablet.svg");
+    width: 200px;
+    height: 211px;
+    bottom: 80px;
+    right: 64px;
+    top: unset;
+    left: unset;
+  }
 }
 
 .plan__icon--pro {
@@ -27,6 +46,15 @@
   height: 50px;
   top: 26px;
   left: 13px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/cat_pro-tablet.svg");
+    width: 268px;
+    height: 200px;
+    right: 29px;
+    top: 90px;
+    left: unset;
+  }
 }
 
 .plan__title {
@@ -37,12 +65,23 @@
   margin: 0;
   padding: 30px 70px;
   white-space: nowrap;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
 }
 
 .plan__text {
   .text;
   margin: 0;
   margin-bottom: 42px;
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    margin-bottom: 48px;
+  }
   &::after {
     .color(@bottom-line);
     content: "";
@@ -51,6 +90,10 @@
     height: 1px;
     bottom: 57px;
     right: 20px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -59,6 +102,11 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .plan__link-arrow {

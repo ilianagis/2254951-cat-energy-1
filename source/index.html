@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,6 +11,8 @@
       <div class="main-header__container">
         <a class="main-header__logo" href="index.html">
           <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <img src="img/logo-mobile.svg" alt="Лого Cat Energy">
           </picture>
         </a>
@@ -47,7 +49,7 @@
             <p class="promo__description">Занялся собой? Займись котом!</p>
           </div>
         </div>
-        <a class="promo__button button button--choose-plan" href="form.html">Подобрать программу</a>
+        <a class="promo__button button" href="form.html">Подобрать программу</a>
       </section>
       <section class="plans">
         <h2 class="visually-hidden">План питания</h2>
@@ -99,13 +101,13 @@
                 <li class="result__item">
                   <div class="result__wrapper">
                     <strong class="result__title">5 кг</strong>
-                    <small class="result__text">снижение веса</small>
+                    <p class="result__text">снижение веса</p>
                   </div>
                 </li>
                 <li class="result__item">
                   <div class="result__wrapper">
                     <strong class="result__title">60 дней</strong>
-                    <small class="result__text">затрачено времени</small>
+                    <p class="result__text">затрачено времени</p>
                   </div>
                 </li>
               </ul>
@@ -137,7 +139,7 @@
       </div>
       <div class="main-footer__container">
         <a class="main-footer__logo">
-          <img class="logo-text" src="img/logo-text.svg" alt="Лого Cat Energy">
+          <img class="logo-text" src="img/footer-logo.svg" alt="Лого Cat Energy">
         </a>
         <h4 class="visually-hidden">Кэт Энерджи в социальных сетях</h4>
         <ul class="main-footer__social">
