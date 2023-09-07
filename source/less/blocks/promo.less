@@ -3,6 +3,10 @@
   flex-direction: column;
   text-align: center;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px 526px 30px;
+  }
 }
 
 .promo__container {
@@ -19,6 +23,23 @@
     transform: translateX(-50%);
     background: url("../img/index-can.png") no-repeat 0 0;
     z-index: 10;
+
+    @media (min-width: @tablet-width) {
+      background: url("../img/index-can-tablet.png") no-repeat 0 0;
+      width: 709px;
+      height: 609px;
+      bottom: 0;
+      top: 200px;
+    }
+    @media (min-width: @desktop-width) {
+      background: url("../img/index-can-desktop.png") no-repeat 0 0;
+      width: 552px;
+      height: 499px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 50px;
   }
 }
 
@@ -28,6 +49,17 @@
   background-color: #69a545;
   padding-bottom: 163px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-left: 90px;
+    margin-right: 200px;
+    background-color: #ffffff;
+  }
+  @media (min-width: @desktop-width) {
+    background-color: #69a545;
+  }
+
   &::after {
     content: "";
     width: 100%;
@@ -37,36 +69,62 @@
     left: 0;
     background: url("../img/index-background.jpg") no-repeat center top;
     background-size: auto 100%;
+    @media (min-width: @tablet-width) {
+      background: none;
+    }
+    @media (min-width: @desktop-width) {
+      background: url("../img/index-background.jpg") no-repeat center top;
+    }
   }
 }
 
 .promo__title {
-  color: #ffffff;
-  font-family: "Oswald";
+  color: @white;
   font-size: 36px;
-  font-style: normal;
   font-weight: 400;
   line-height: 36px;
   margin: 0 auto;
   margin-bottom: 26px;
   width: 282px;
-  text-align: center;
   position: relative;
   z-index: 5;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    text-align: start;
+    margin-bottom: 40px;
+    width: auto;
+  }
 }
 
 .promo__description {
   color: #ffffff;
-  font-family: "Oswald";
-  font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
   position: relative;
   z-index: 5;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+  }
 }
 
 .promo__button {
   display: block;
   margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    z-index: 10;
+    margin: 0 375px 0 90px;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
+  }
 }

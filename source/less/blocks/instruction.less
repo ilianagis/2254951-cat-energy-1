@@ -1,31 +1,77 @@
 .instruction {
   padding: 0 20px;
   margin-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+}
+
+.instruction__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+
+  }
 }
 
 .instruction__item {
   .text;
   position: relative;
+  display: flex;
   margin-bottom: 20px;
-  &--group1 {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    padding: 40px 26px 57px 0;
+
+    &:nth-of-type(odd) {
+      margin-right: 153px;
+    }
+  }
+  &::before {
     width: 60px;
     height: 60px;
+    content: "";
+    margin-right: 20px;
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-right: 0;
+    }
+    @media (min-width: @desktop-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--group1 {
     background: url("../img/group1.svg") no-repeat 0 0;
+    @media (min-width: @tablet-width) {
+      background: url("../img/group1-tablet.svg") no-repeat 0 0;
+    }
   }
   &--group2 {
-    width: 60px;
-    height: 60px;
     background: url("../img/group2.svg") no-repeat 0 0;
+    @media (min-width: @tablet-width) {
+      background: url("../img/group2-tablet.svg") no-repeat 0 0;
+    }
   }
   &--group3 {
-    width: 60px;
-    height: 60px;
     background: url("../img/group3.svg") no-repeat 0 0;
+    @media (min-width: @tablet-width) {
+      background: url("../img/group3-tablet.svg") no-repeat 0 0;
+    }
   }
   &--group4 {
-    width: 60px;
-    height: 60px;
     background: url("../img/group4.svg") no-repeat 0 0;
+    @media (min-width: @tablet-width) {
+      background: url("../img/group4-tablet.svg") no-repeat 0 0;
+    }
   }
   &:last-child {
     margin-bottom: 0;
@@ -34,16 +80,19 @@
 
 .instruction__text {
   width: 200px;
-  padding-left: 80px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 245px;
+    padding-left: 0;
+  }
 }
 
 .instruction__title {
   .title;
   margin: 0;
   margin-bottom: 40px;
-}
-
-.instruction__list {
-  margin: 0;
-  padding: 0;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+  }
 }

@@ -1,11 +1,37 @@
+.main-header {
+  @media (min-width: @tablet-width) {
+    padding: 0 34px 0 30px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
+}
+
 .main-header__container {
   position: relative;
   padding-top: 64px;
   background: url("../img/logo-text.svg") no-repeat center 22px;
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/logo-text.svg") no-repeat 73px 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 0;
+    margin: 25px 0 65px 0;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 55px 0 0 0;
+    background: url("../img/logo-text-desktop.svg") no-repeat 84px 18px;
+  }
 }
 
 .main-header__logo {
   position: absolute;
   top: 12px;
   left: 20px;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: 0;
+  }
 }
