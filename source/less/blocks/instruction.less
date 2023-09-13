@@ -1,9 +1,12 @@
 .instruction {
   padding: 0 20px;
   margin-bottom: 49px;
-
   @media (min-width: @tablet-width) {
     padding: 0 30px;
+    margin-bottom: -31px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
   }
 }
 
@@ -13,8 +16,8 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media (min-width: @tablet-width) {
-
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
   }
 }
 
@@ -26,13 +29,62 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    gap: 37px;
-    padding: 40px 26px 57px 0;
+    gap: 31px;
+    margin-bottom: 134px;
 
     &:nth-of-type(odd) {
-      margin-right: 153px;
+      margin-right: 139px;
+      @media (min-width: @desktop-width) {
+        margin-right: 0;
+      }
+    }
+
+    &--group1 {
+      &::after {
+        content: "";
+        background: url("../../img/group1count.png") no-repeat;
+        width: 112px;
+        height: 280px;
+        top: 0;
+        right: 7px;
+        position: absolute;
+      }
+    }
+    &--group2 {
+      &::after {
+        content: "";
+        background: url("../../img/group2count.png") no-repeat;
+        width: 112px;
+        height: 280px;
+        top: 0;
+        right: 12px;
+        position: absolute;
+      }
+    }
+    &--group3 {
+      &::after {
+        content: "";
+        background: url("../../img/group3count.png") no-repeat;
+        width: 112px;
+        height: 280px;
+        top: 0;
+        right: 9px;
+        position: absolute;
+      }
+    }
+    &--group4 {
+      &::after {
+        content: "";
+        background: url("../../img/group4count.png") no-repeat;
+        width: 112px;
+        height: 280px;
+        top: 0;
+        right: 8px;
+        position: absolute;
+      }
     }
   }
+
   &::before {
     width: 60px;
     height: 60px;
@@ -42,10 +94,6 @@
       width: 80px;
       height: 80px;
       margin-right: 0;
-    }
-    @media (min-width: @desktop-width) {
-      width: 80px;
-      height: 80px;
     }
   }
 
@@ -76,6 +124,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .instruction__text {
@@ -85,6 +137,11 @@
   @media (min-width: @tablet-width) {
     width: 245px;
     padding-left: 0;
+    z-index: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 57px;
   }
 }
 
@@ -93,6 +150,6 @@
   margin: 0;
   margin-bottom: 40px;
   @media (min-width: @tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 72px;
   }
 }

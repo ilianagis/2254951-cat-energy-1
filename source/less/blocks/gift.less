@@ -1,0 +1,40 @@
+.gift__container {
+  position: relative;
+  height: 290px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../img/gift-background.png") no-repeat 0 0;
+    width: 100%;
+    height: 290px;
+  }
+}
+
+.gift__wrapper {
+  background-color: @green-bg;
+  width: 100%;
+  height: inherit;
+  position: absolute;
+}
+
+.gift__description {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  position: relative;
+  padding: 187px 61px 43px 58px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url(../../img/icon-gift.svg) no-repeat 0 0;
+    width: 78px;
+    height: 80px;
+    top: 20%;
+    left: 36%;
+  }
+}

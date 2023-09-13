@@ -1,0 +1,84 @@
+.fieldset-commentary {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 72px;
+  }
+}
+
+.fieldset-commentary__title {
+  .form-legend;
+  margin-bottom: 38px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  &::after {
+    .green-title-line;
+    top: 58%;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 86px;
+
+    &::before {
+      .green-title-line;
+      top: 60%;
+      width: 4%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 78px;
+
+    &::before {
+      top: 62%;
+      width: 5%;
+    }
+
+    &::after {
+      top: 62%;
+    }
+  }
+}
+
+.fieldset-commentary__title span {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 40px 0 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 40px 0 110px;
+  }
+}
+
+.fieldset-commentary__textarea {
+  .input-label;
+  border: 1px solid #E7E7E7;
+  height: 135px;
+  padding: 13px 10px 0 15px;
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 70px;
+    padding: 11px 10px 0 19px;
+    height: 163px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+    padding: 9px 10px 0 20px;
+  }
+}
