@@ -1,0 +1,49 @@
+.checkbox {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    gap: 20px;
+    display: flex;
+    padding-bottom: 32px;
+    margin-bottom: 0;
+    width: 284px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
+}
+
+.checkbox__input[type="checkbox"] {
+  background-color: #ffffff;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  appearance: none;
+  cursor: pointer;
+  border: 1px solid #cdcdcd;
+  padding: 2px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+  }
+}
+
+.checkbox__input[type="checkbox"]:checked {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center top 0;
+
+  @media (min-width: @tablet-width) {
+    background-position: center top 8px;
+  }
+}
+
+.checkbox__text {
+  .input-label;
+}

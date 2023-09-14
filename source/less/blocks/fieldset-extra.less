@@ -1,0 +1,47 @@
+.fieldset-extra {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 31px;
+  border: none;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 50px;
+  }
+}
+
+.fieldset-extra__title {
+  padding: 0;
+  margin-bottom: 34px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  &::after {
+    .green-title-line;
+    top: 57%;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 56px;
+
+    &::before {
+      .green-title-line;
+      width: 4%;
+      top: 56%;
+    }
+  }
+}
+
+.fieldset-extra__title span {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 40px 0 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 40px 0 110px;
+  }
+}

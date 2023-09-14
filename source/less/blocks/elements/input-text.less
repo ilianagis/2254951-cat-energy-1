@@ -1,0 +1,26 @@
+.input-text {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    flex-grow: 1;
+  }
+}
+
+.input-text__label {
+  .input-label;
+  display: inline-block;
+}
+
+.input-text__input {
+  .input-label;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+  flex-grow: 1;
+  padding-left: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding: 4px 0 4px 18px;
+  }
+}

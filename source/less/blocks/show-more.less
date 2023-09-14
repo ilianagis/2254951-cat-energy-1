@@ -1,0 +1,33 @@
+.show-more {
+  margin-top: 54px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url("../img/plus.svg") no-repeat 0 0;
+    top: -52%;
+    right: 45%;
+  }
+}
+
+.show-more__title {
+  .product-name;
+  text-align: center;
+  color: #111111;
+  margin-bottom: 8px;
+}
+
+.show-more__title::before {
+  position: absolute;
+  background: url("../img/plus.svg");
+}
+
+.show-more__description {
+  .product-features;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 22px;
+}

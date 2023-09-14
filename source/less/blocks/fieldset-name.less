@@ -1,0 +1,33 @@
+.fieldset-name {
+  padding: 0 0 23px;
+  margin: 0 20px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 67px 70px 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+  }
+}
+
+.fieldset-name__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.fieldset-name__item {
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
+  }
+}
+
+.fieldset-name__item:last-child {
+  margin-bottom: 0;
+}
