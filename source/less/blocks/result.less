@@ -2,6 +2,10 @@
   @media (min-width: @tablet-width) {
     display: flex;
   }
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    gap: 24px;
+  }
 }
 
 .result__list {
@@ -41,6 +45,7 @@
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    padding: 14px 19px 19px;
   }
 }
 
@@ -58,8 +63,13 @@
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    margin: -8px auto 0;
+    margin: -9px auto 0;
     padding: 0;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
   }
 }
 
@@ -77,5 +87,11 @@
     line-height: 28px;
     display: inherit;
     justify-content: flex-end;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+    margin-left: 0;
+    gap: 66px;
   }
 }
