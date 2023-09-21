@@ -1,8 +1,34 @@
 .example {
   background-color: #eaeaea;
   padding: 0 20px 45px 20px;
+
   @media (min-width: @tablet-width) {
-    padding: 21px 30px 101px;
+    padding: 21px 30px 97px;
+    background-image: linear-gradient(to bottom, #ffffff 57%, #f2f2f2 57%);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    background-image: linear-gradient(to bottom, #ffffff 25%, #f2f2f2 25%);
+  }
+}
+
+.example__container {
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    gap: 228px;
+  }
+}
+
+.example__column {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 72px;
   }
 }
 
@@ -13,6 +39,11 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 68px 0;
+    width: 433px;
   }
 }
 
@@ -25,6 +56,11 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    padding-bottom: 76px;
+  }
 }
 
 .example__photo {
@@ -32,13 +68,24 @@
   display: flex;
   flex-direction: inherit;
   gap: 4px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: center;
+    gap: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 512px;
+    width: 560px;
+    margin-top: 24px;
+  }
 }
 
 .example__curtain {
   .color(@gray-special);
   position: absolute;
   width: 4px;
-  height: 256px;
-  right: 49%;
+  height: 100%;
+  right: 50%;
 }
 

@@ -1,8 +1,7 @@
 .promo {
-  display: flex;
-  flex-direction: column;
   text-align: center;
   margin-bottom: 20px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 526px;
@@ -10,6 +9,41 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 111px;
+    margin-bottom: 0;
+
+    &::before {
+      content: "";
+      width: 50%;
+      height: calc(100% + 32px);
+      position: absolute;
+      top: -113px;
+      right: 0;
+      background: @green-bg;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../img/index-background-desktop.jpg") no-repeat right;
+      width: 50%;
+      height: calc(100% + 32px);
+      top: -17%;
+      background-size: cover;
+    }
+  }
+}
+
+.promo__block {
+  @media (min-width: @tablet-width) {
+   width: 709px;
+   margin: 0 auto;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding-bottom: 152px;
+    padding-left: 158px;
+    min-height: 400px;
   }
 }
 
@@ -34,23 +68,25 @@
       height: 609px;
       bottom: 0;
       top: 200px;
+      z-index: 5;
     }
     @media (min-width: @desktop-width) {
       background: url("../img/index-can-desktop.png") no-repeat 0 0;
       width: 552px;
       height: 499px;
-      top: 18%;
-      left: 59%;
+      top: -44%;
+      left: 53%;
     }
   }
 
   @media (min-width: @tablet-width) {
-    padding: 0 120px 50px;
+    padding: 0 0 50px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 190px;
-    margin-bottom: 40px;
+    padding: 0;
+    margin: 0 auto 52px;
+    width: 1220px;
   }
 }
 
@@ -63,7 +99,9 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    background-color: #ffffff;
+    background-color: transparent;
+    max-width: 452px;
+    margin: 0;
   }
 
   &::after {
@@ -79,7 +117,7 @@
       background: none;
     }
     @media (min-width: @desktop-width) {
-      background: url("../img/index-background.jpg") no-repeat center top;
+      display: none;
     }
   }
 }
@@ -125,9 +163,15 @@
 
   @media (min-width: @tablet-width) {
     z-index: 10;
-    margin: 0 405px 0 120px;
+    margin: 0;
     font-size: 20px;
     line-height: 26px;
     padding: 14px 26px;
+    position: relative;
+    width: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 192px;
   }
 }

@@ -9,8 +9,11 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 23%;
-    left: 8%;
+    top: 95px;
+    left: 109px;
+    justify-content: space-between;
+    padding: 60px 78px 60px 80px;
+    gap: 88px;
   }
 }
 
@@ -45,5 +48,15 @@
     max-width: 157px;
     text-align: right;
     line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
   }
 }

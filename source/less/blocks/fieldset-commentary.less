@@ -3,11 +3,11 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   border: none;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: @desktop-width) {
@@ -16,53 +16,14 @@
 }
 
 .fieldset-commentary__title {
-  .form-legend;
   margin-bottom: 38px;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-
-  &::after {
-    .green-title-line;
-    top: 58%;
-  }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 86px;
-
-    &::before {
-      .green-title-line;
-      top: 60%;
-      width: 4%;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 78px;
-
-    &::before {
-      top: 62%;
-      width: 5%;
-    }
-
-    &::after {
-      top: 62%;
-    }
+    margin-bottom: 88px;
   }
 }
 
-.fieldset-commentary__title span {
-  padding: 0 20px;
 
-  @media (min-width: @tablet-width) {
-    padding: 0 40px 0 70px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 0 40px 0 110px;
-  }
-}
 
 .fieldset-commentary__textarea {
   .input-label;

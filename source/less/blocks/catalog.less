@@ -8,11 +8,28 @@
     border-bottom: none;
     margin-bottom: 84px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 75px auto 83px;
+    width: 1220px;
+  }
 }
 
 .catalog__wrapper {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 30px;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 1220px;
   }
 }
