@@ -25,7 +25,25 @@
   }
 }
 
+<<<<<<< Updated upstream
 .main-nav__toggle-item {
+=======
+.main-nav--js .main-nav__toggle {
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-color: transparent;
+}
+
+.main-nav--closed .main-nav__toggle-item {
+>>>>>>> Stashed changes
   position: relative;
   display: inline-flex;
   flex-direction: column;
@@ -49,3 +67,37 @@
     top: 8px;
   }
 }
+<<<<<<< Updated upstream
+=======
+
+.main-nav__toggle-close {
+  background: url(../img/close.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.main-nav--closed .main-nav__toggle-close {
+  display: none;
+}
+
+.main-nav--js .main-nav__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.main-nav--closed .main-nav__list{
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    position: static;
+    background-color: transparent;
+  }
+}
+
+
+>>>>>>> Stashed changes
