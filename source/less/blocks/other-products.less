@@ -2,11 +2,11 @@
   margin-top: 20px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 65px;
+    margin-top: 64px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 72px;
+    margin-top: 69px;
   }
 }
 
@@ -23,6 +23,8 @@
     display: flex;
     width: 1220px;
     margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 85px;
   }
 }
 
@@ -37,6 +39,7 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
+    min-width: 896px;
   }
 }
 
@@ -55,12 +58,26 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    padding: 0;
+    justify-content: space-between;
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
   }
 }
 
 .other-products__wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    padding: 25px 0;
   }
 }
 
@@ -76,11 +93,12 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    width: 161px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 161px;
-    margin-right: 164px;
+    margin: 0;
   }
 }
 
@@ -92,6 +110,8 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    width: 223px;
+    margin-bottom: 0;
   }
 }
 
@@ -100,10 +120,20 @@
   font-family: "Lato";
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
 }
 
-.other-products__gift {
-  padding: 0 20px;
-  margin-top: 34px;
-  margin-bottom: 35px;
+.other-products__amount {
+  @media (min-width: @tablet-width) {
+    width: 131px;
+    text-align: end;
+  }
 }

@@ -1,14 +1,25 @@
+.gift {
+  padding: 0 20px;
+  margin-top: 34px;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+  }
+}
+
 .gift__container {
   position: relative;
   height: 290px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    background: url("../img/gift-background.png") no-repeat 0 0;
-    width: 100%;
-    height: 290px;
-  }
+  width: 100%;
+  background: url(../img/gift-background-m.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .gift__wrapper {
@@ -36,5 +47,6 @@
     height: 80px;
     top: 20%;
     left: 36%;
+    padding: 184px 40px 20px;
   }
 }
