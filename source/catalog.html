@@ -22,8 +22,8 @@
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
             <span class="main-nav__toggle-item"></span>
+            <div class="main-nav__toggle-close"></div>
           </button>
           <ul class="main-nav__list nav-list">
             <li class="nav-list__item">
@@ -50,8 +50,8 @@
           <li class="product">
             <a class="product__img">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-1-tablet.png">
-                <img src="img/catalog-1.jpg" alt="Cat energy pro с курицей, 500г">
+                <source media="(min-width: 768px)" srcset="img/chicken-500-t.png, img/chicken-500-t@2x.png 2x">
+                <img src="img/chicken-500-m.png" srcset="img/chicken-500-m@2x.png 2x" alt="Cat energy pro с курицей, 500г">
               </picture>
             </a>
             <div class="product__wrapper">
@@ -76,8 +76,8 @@
           <li class="product">
             <a class="product__img">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-2-tablet.png">
-                <img src="img/catalog-2.jpg" alt="Cat energy pro с курицей, 1000г">
+                <source media="(min-width: 768px)" srcset="img/chicken-1000-t.png, img/chicken-1000-t@2x.png 2x">
+                <img src="img/chicken-1000-m.png" srcset="img/chicken-1000-m@2x.png 2x" alt="Cat energy pro с курицей, 1000г">
               </picture>
             </a>
             <div class="product__wrapper">
@@ -102,8 +102,8 @@
           <li class="product">
             <a class="product__img">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-3-tablet.png">
-                <img src="img/catalog-3.jpg" alt="Cat energy pro с рыбой, 500г">
+                <source media="(min-width: 768px)" srcset="img/fish-500-t.png, img/fish-500-t@2x.png 2x">
+                <img src="img/fish-500-m.png" srcset="img/fish-500-m@2x.png 2x" alt="Cat energy pro с рыбой, 500г">
               </picture>
             </a>
             <div class="product__wrapper">
@@ -128,8 +128,8 @@
           <li class="product">
             <a class="product__img">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-4-tablet.png">
-                <img src="img/catalog-4.jpg" alt="Cat energy pro с рыбой, 1000г">
+                <source media="(min-width: 768px)" srcset="img/fish-1000-t.png, img/fish-1000-t@2x.png 2x">
+                <img src="img/fish-1000-m.png" srcset="img/fish-1000-m@2x.png 2x" alt="Cat energy pro с рыбой, 1000г">
               </picture>
             </a>
             <div class="product__wrapper">
@@ -154,8 +154,8 @@
           <li class="product">
             <a class="product__img">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-5-tablet.png">
-                <img src="img/catalog-5.jpg" alt="Cat energy slim с гречкой, 500г">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-500-t.png, img/buckwheat-500-t@2x.png 2x">
+                <img src="img/buckwheat-500-m.png" srcset="img/buckwheat-500-m@2x.png 2x" alt="Cat energy slim с гречкой, 500г">
               </picture>
             </a>
             <div class="product__wrapper">
@@ -180,8 +180,8 @@
           <li class="product">
             <a class="product__img">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-6-tablet.png">
-                <img src="img/catalog-6.jpg" alt="Cat energy SLIM с гречкой, 1000г">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-1000-t.png, img/buckwheat-1000-t@2x.png 2x">
+                <img src="img/buckwheat-1000-m.png" srcset="img/buckwheat-1000-m@2x.png 2x" alt="Cat energy SLIM с гречкой, 1000г">
               </picture>
             </a>
             <div class="product__wrapper">
@@ -206,8 +206,8 @@
           <li class="product">
             <a class="product__img">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-7-tablet.png">
-                <img src="img/catalog-7.jpg" alt="Cat energy SLIM с рисом, 500г">
+                <source media="(min-width: 768px)" srcset="img/rice-500-t.png, img/rice-500-t@2x.png 2x">
+                <img src="img/rice-500-m.png" srcset="img/rice-500-m@2x.png 2x" alt="Cat energy SLIM с рисом, 500г">
               </picture>
             </a>
             <div class="product__wrapper">
@@ -249,8 +249,8 @@
                 <div class="other-products__wrapper">
                   <h4 class="other-products__name">Сахарозаменитель</h4>
                   <div class="other-products__description">
-                    <span>1 упаковка (100 г)</span>
-                    <span>200 <span>₽</span></span>
+                    <span class="other-products__amount">1 упаковка (100 г)</span>
+                    <span class="other-products__price">200 <span>₽</span></span>
                   </div>
                 </div>
                 <button class="button button__order button__order--other" type="button">Заказать</button>
@@ -259,8 +259,8 @@
                 <div class="other-products__wrapper">
                   <h4 class="other-products__name">Питьевая вода</h4>
                   <div class="other-products__description">
-                    <span>5 литров</span>
-                    <span>50 <span>₽</span></span>
+                    <span class="other-products__amount">5 литров</span>
+                    <span class="other-products__price">50 <span>₽</span></span>
                   </div>
                 </div>
                 <button class="button button__order button__order--other" type="button">Заказать</button>
@@ -269,8 +269,8 @@
                 <div class="other-products__wrapper">
                   <h4 class="other-products__name">Молоко</h4>
                   <div class="other-products__description">
-                    <span>1 литр</span>
-                    <span>100 <span>₽</span></span>
+                    <span class="other-products__amount">1 литр</span>
+                    <span class="other-products__price">100 <span>₽</span></span>
                   </div>
                 </div>
                 <button class="button button__order button__order--other" type="button">Заказать</button>
@@ -279,8 +279,8 @@
                 <div class="other-products__wrapper">
                   <h4 class="other-products__name">Витамины</h4>
                   <div class="other-products__description">
-                    <span>1 упаковка (30 г)</span>
-                    <span>300 <span>₽</span></span>
+                    <span class="other-products__amount">1 упаковка (30 г)</span>
+                    <span class="other-products__price">300 <span>₽</span></span>
                   </div>
                 </div>
                 <button class="button button__order button__order--other" type="button">Заказать</button>
@@ -361,6 +361,7 @@
         </a>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 
   </html>

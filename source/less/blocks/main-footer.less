@@ -1,5 +1,8 @@
+.main-footer {
+  background-color: #f2f2f2;
+}
+
 .main-footer__container {
-  .color(@gray);
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
@@ -11,7 +14,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 53px 110px;
+    padding: 53px 0;
+    margin: 0 auto;
+    width: 1220px;
   }
 }
 
@@ -58,5 +63,11 @@
     @media (min-width: @tablet-width) {
       display: none;
     }
+  }
+}
+
+.main-footer__social-link {
+  &:hover {
+    fill: #68B738;
   }
 }
