@@ -1,6 +1,6 @@
 .example {
   background-color: #eaeaea;
-  padding: 0 20px 45px 20px;
+  padding: 0 20px 36px 20px;
 
   @media (min-width: @tablet-width) {
     padding: 21px 30px 97px;
@@ -67,7 +67,6 @@
   position: relative;
   display: flex;
   flex-direction: inherit;
-  gap: 4px;
 
   @media (min-width: @tablet-width) {
     justify-content: center;
@@ -81,21 +80,20 @@
   }
 }
 
+.example__photo-wrapper {
+  width: 50%;
+  overflow: hidden;
+}
+
 .example__curtain {
   .color(@gray-special);
   position: absolute;
   width: 4px;
   height: 100%;
-  right: 50%;
+  right: 49%;
 }
 
-.example__img {
-  &--before {
-    //position: absolute;
-    right: ;
-  }
-
-  &--after {
-    left: ;
-  }
+.example__img--after {
+  right: 0;
+  position: absolute;
 }
