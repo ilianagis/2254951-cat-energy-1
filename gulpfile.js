@@ -15,7 +15,7 @@ import browser from 'browser-sync';
 
 // Styles
 
-const styles = () => {
+export const styles = () => {
   return gulp.src('source/less/style.less', { sourcemaps: true })
 
     .pipe(plumber())
@@ -90,7 +90,7 @@ const sprite = () => {
 
 const copy = (done) => {
   gulp.src([
-    'source/fonts/*.{woff2, woff}',
+    'source/fonts/**/*.{woff2, woff}',
     'source/*.ico',
     'source/manifest.webmanifest',
   ], {
@@ -142,8 +142,8 @@ export const build = gulp.series(
   copy,
   optimizeImages,
   gulp.parallel(
-    styles,
     html,
+    styles,
     scripts,
     svg,
     sprite,
@@ -158,8 +158,8 @@ export default gulp.series(
   copy,
   copyImages,
   gulp.parallel(
-    styles,
     html,
+    styles,
     scripts,
     svg,
     sprite,
