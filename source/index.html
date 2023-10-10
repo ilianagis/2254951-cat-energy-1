@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
@@ -131,20 +131,24 @@
           </section>
         </div>
         <div class="example__photo">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/cat-before-t@1x.png, img/cat-before-t@2x.png 2x">
-            <img class="example__img example__img--before" src="img/cat-before-m@1x.png" srcset="img/cat-before-m@2x.png 2x" alt="До">
-          </picture>
+          <div class="example__photo-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-before-t@1x.png, img/cat-before-t@2x.png 2x">
+              <img class="example__img example__img--before" src="img/cat-before-m@1x.png" srcset="img/cat-before-m@2x.png 2x" alt="До">
+            </picture>
+          </div>
           <div class="example__curtain">
             <div class="triangle__container">
               <div class="triangle-toggle triangle-toggle-left"></div>
               <div class="triangle-toggle triangle-toggle-right"></div>
             </div>
           </div>
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/cat-after-t@1x.png, img/cat-after-t@2x.png 2x">
-            <img class="example__img example__img--after" src="img/cat-after-m@1x.png" srcset="img/cat-after-m@2x.png 2x" alt="После">
-          </picture>
+          <div class="example__photo-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-after-t@1x.png, img/cat-after-t@2x.png 2x">
+              <img class="example__img example__img--after" src="img/cat-after-m@1x.png" srcset="img/cat-after-m@2x.png 2x" alt="После">
+            </picture>
+          </div>
         </div>
       </div>
     </section>
