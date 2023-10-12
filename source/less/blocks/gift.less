@@ -25,14 +25,26 @@
   background-position: center;
   background-size: cover;
 
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/gift-background-d@2x.jpg);
+  }
+
   @media (min-width: @tablet-width) {
     height: 200px;
     background-image: url(../img/gift-background-t.jpg);
   }
 
+  @media (min-width: @tablet-width) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: @tablet-width) and (min-resolution: 144dpi), (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
+    background-image: url(../img/gift-background-t@2x.jpg);
+  }
+
   @media (min-width: @desktop-width) {
     height: 288px;
     background-image: url(../img/gift-background-d.jpg);
+  }
+
+  @media (min-width: @desktop-width) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: @desktop-width) and (min-resolution: 144dpi), (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
+    background-image: url(../img/gift-background-d@2x.jpg);
   }
 }
 
