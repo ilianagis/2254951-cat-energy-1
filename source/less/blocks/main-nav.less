@@ -4,6 +4,7 @@
   @media (min-width: @tablet-width) {
     padding-bottom: 12px;
     margin-top: 14px;
+    max-width: 65%;
   }
 
   @media (min-width: @desktop-width) {
@@ -17,7 +18,7 @@
   padding: 4px 0;
   border: none;
   cursor: pointer;
-  right: 21px;
+  right: 25px;
   top: -49px;
 
   @media (min-width: @tablet-width) {
@@ -66,9 +67,10 @@
 }
 
 .main-nav__toggle-close {
-  background: url(../img/close.svg);
+  background: url("../img/close.svg");
   width: 20px;
   height: 20px;
+  display: block;
 }
 
 .main-nav--closed .main-nav__toggle-close {
@@ -92,5 +94,6 @@
     display: flex;
     position: static;
     background-color: transparent;
+    flex-wrap: wrap;
   }
 }

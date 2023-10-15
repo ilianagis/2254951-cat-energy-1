@@ -11,6 +11,7 @@
     padding: 40px 30px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,9 +31,20 @@
   }
 }
 
+.main-footer__logo-svg {
+  &:hover, :focus {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
+}
+
 .main-footer__social {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
   padding: 0;
@@ -66,8 +78,13 @@
   }
 }
 
-.main-footer__social-link {
-  &:hover {
-    fill: #68B738;
+.main-footer__social-svg,
+.htmlacademy-logo-svg {
+  &:hover, :focus {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
