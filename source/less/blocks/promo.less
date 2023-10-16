@@ -14,21 +14,10 @@
 
     &::before {
       content: "";
+      position: absolute;
       width: 50%;
       height: calc(100% + 32px);
-      position: absolute;
-      top: -113px;
-      right: 0;
-      background: @green-bg;
-      z-index: 1;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      background: url("../img/index-background-desktop.jpg") no-repeat right;
-      width: 50%;
-      height: calc(100% + 32px);
+      background: url(../img/index-background-desktop.jpg)no-repeat right;
       top: -17%;
       background-size: cover;
     }
@@ -91,8 +80,7 @@
       );
       width: 552px;
       height: 499px;
-      top: -44%;
-      left: 53%;
+      top: -44px;
     }
   }
 
