@@ -1,6 +1,18 @@
 .map {
   @media (min-width: @desktop-width) {
     position: relative;
+    padding: 98px 0 106px;
+  }
+}
+
+.map__iframe {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
   }
 }
 
@@ -10,6 +22,7 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    height: 400px;
+    height: 100%;
   }
+
 }
