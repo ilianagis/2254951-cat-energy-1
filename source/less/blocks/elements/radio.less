@@ -52,3 +52,13 @@
 .radio__input:checked + .radio__label::after {
   display: block;
 }
+
+.radio__label:hover::before,
+.radio__label:focus::before {
+  border: 1px solid #bababa;
+}
+
+.radio__label:active::before,
+.radio__label:active {
+  opacity: 0.3;
+}

@@ -6,13 +6,39 @@
 }
 
 .map__iframe {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/map-img-m.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 362px;
+  background-position: center 0;
+
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    background-image: url("../img/map-img-m@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/map-img-t.jpg");
+    background-size: 768px 400px;
+    height: 400px;
+  }
+
+  @media (min-width: @tablet-width) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: @tablet-width) and (min-resolution: 1.5dppx), (min-width: @tablet-width) and (min-resolution: 144dpi) {
+    background-image: url("../img/map-img-t@2x.jpg");
+  }
+
   @media (min-width: @desktop-width) {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     z-index: 0;
+
+    background-image: url("../img/map-img-d.jpg");
+    background-size: 1440px 400px;
+  }
+
+  @media (min-width: @desktop-width) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: @desktop-width) and (min-resolution: 1.5dppx), (min-width: @desktop-width) and (min-resolution: 144dpi) {
+    background-image: url("../img/map-img-d@2x.jpg");
   }
 }
 

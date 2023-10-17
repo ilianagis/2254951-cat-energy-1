@@ -125,7 +125,7 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  padding: 4px 40px 4px 0;
+  padding: 4px 47px 4px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -157,7 +157,16 @@
   }
 }
 
-.plan__link:hover,
-.plan__link:focus {
+.plan__link:hover .plan__link-arrow,
+.plan__link:focus .plan__link-arrow {
+  width: 26px;
+}
+
+.plan__link:hover .plan__link-arrow::after,
+.plan__link:focus .plan__link-arrow::after {
+  left: 24px;
+}
+
+.plan__link:active {
   opacity: 0.3;
 }
