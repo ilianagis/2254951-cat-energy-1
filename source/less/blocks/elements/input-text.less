@@ -32,11 +32,12 @@
 
 .input-text__input:focus,
 .input-text__input:active {
-  border: 2px solid #444444;
+  outline: 2px solid #444444;
+  border-color: transparent;
 }
 
-.input-text__input:focus:invalid {
-  border: 2px solid #ff8282;
+.input-text__input:invalid:not(:placeholder-shown) {
+  outline: 2px solid #ff8282;
 }
 
 .input-text__icon {

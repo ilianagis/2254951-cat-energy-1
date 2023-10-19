@@ -1,0 +1,147 @@
+.slider {
+  @media (min-width: @tablet-width) {
+    background-color: red;
+    background-color: #eaeaea;
+
+    &::before {
+      content: "";
+      height: 150px;
+      width: 100%;
+      background-color: blue;
+      background-color: #ffffff;
+      position: absolute;
+      top: 0;
+      left:0;
+    }
+  }
+}
+
+.slider__wrapper {
+  width: 280px;
+  height: 256px;
+  position: relative;
+  margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.slider__item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 1s ease;
+  @media (min-width: @tablet-width) {
+    background-color: green;
+    &::before {
+      content: "";
+      height: 150px;
+      width: 100%;
+      background-color: blue;
+      background-color: #ffffff;
+      position: absolute;
+      top: 0;
+      left:0;
+      z-index: 1;
+    }
+  }
+}
+
+.slider__img {
+  position: relative;
+  z-index: 5;
+}
+
+.slider__item--before {
+  z-index: 10;
+  background-color: red;
+  background-color: #eaeaea;
+  width: 50%;
+  @media (min-width: @tablet-width) {
+    background-color: tomato;
+    background-color: #eaeaea;
+  }
+}
+
+.slider--before .slider__item--before {
+  width: 100%;
+}
+
+.slider--after .slider__item--before {
+  width: 0;
+}
+
+.slider__item--after {
+  z-index: 5;
+  background-color: violet;
+  background-color: #eaeaea;
+  @media (min-width: @tablet-width) {
+    background-color: aqua;
+    background-color: #eaeaea;
+  }
+}
+
+.slider__toggle {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 1s ease;
+
+  &::before {
+    content: "";
+    height: 256px;
+    width: 4px;
+    border-radius: 2px;
+    background-color: #666666;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (min-width: @tablet-width) {
+      height: 512px;
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 2px solid #666666;
+  }
+}
+
+.slider__toggle:hover {
+  &::before {
+    background-color: red;
+  }
+
+  &::after {
+    border-color: red;
+  }
+}
+
+.slider--before .slider__toggle {
+  left: 100%;
+}
+
+.slider--after .slider__toggle {
+  left: 0;
+}

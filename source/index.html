@@ -133,30 +133,29 @@
             </div>
           </section>
         </div>
-        <div class="example__photo">
-          <div class="example__photo-wrapper">
+        <div class="example__photo slider">
+          <div class="slider__wrapper">
+          <div class="slider__item slider__item--before">
             <picture>
               <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-t@1x.webp 1x, img/cat-before-t@2x.webp 2x">
               <source type="image/webp" srcset="img/cat-before-m@1x.webp 1x, img/cat-before-m@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/cat-before-t@1x.png, img/cat-before-t@2x.png 2x">
-              <img class="example__img example__img--before" src="img/cat-before-m@1x.png" srcset="img/cat-before-m@2x.png 2x" alt="До">
+              <img class="slider__img" src="img/cat-before-m@1x.png" srcset="img/cat-before-m@2x.png 2x" alt="До">
             </picture>
           </div>
-          <div class="example__curtain toggle">
-            <div class="toggle__container">
-              <div class="toggle-left"></div>
-              <div class="toggle-right"></div>
-            </div>
-          </div>
-          <div class="example__photo-wrapper">
+          <div class="slider__item slider__item--after">
             <picture>
               <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-t@1x.webp 1x, img/cat-after-t@2x.webp 2x">
               <source type="image/webp" srcset="img/cat-after-m@1x.webp 1x, img/cat-after-m@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/cat-after-t@1x.png, img/cat-after-t@2x.png 2x">
-              <img class="example__img example__img--after" src="img/cat-after-m@1x.png" srcset="img/cat-after-m@2x.png 2x" alt="После">
+              <img class="slider__img" src="img/cat-after-m@1x.png" srcset="img/cat-after-m@2x.png 2x" alt="После">
             </picture>
           </div>
+          <button class="slider__toggle" type="button">
+            <span class="visually-hidden">Переключить состояние слайдера</span>
+          </button>
         </div>
+      </div>
       </div>
     </section>
   </main>
