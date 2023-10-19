@@ -47,10 +47,12 @@
     </div>
   </header>
   <main class="page-form">
-    <h1 class="inner-title page-form__title">Подбор программы</h1>
-    <p class="inner-text page-form__text">
-      Заполните анкету, и мы подберем программу питания для вашего кота
-    </p>
+    <div class="page-form__article">
+      <h1 class="inner-title page-form__title">Подбор программы</h1>
+      <p class="inner-text page-form__text">
+        Заполните анкету, и мы подберем программу питания для вашего кота
+      </p>
+    </div>
     <form class="questionnaire" action="https://echo.htmlacademy.ru" method="post">
       <div class="questionnaire__wrapper">
         <fieldset class="questionnaire__fieldset fieldset-name">
@@ -98,13 +100,17 @@
         <ul class="fieldset-owner__list">
           <li class="fieldset-owner__item input-text">
             <label for="email" class="input-text__label">E-mail:*</label>
-            <input class="input-text__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com"
-              required>
+            <input class="input-text__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+            <svg class="input-text__icon input-text__icon--email" width="20" height="20">
+              <use xlink:href="img/sprite.svg#email-icon"></use>
+            </svg>
           </li>
           <li class="fieldset-owner__item input-text">
             <label for="number" class="input-text__label">Телефон:*</label>
-            <input class="input-text__input" type="number" name="number" id="number" placeholder="8 (960) 900-60-90"
-              required>
+            <input class="input-text__input" type="number" name="number" id="number" placeholder="8 (960) 900-60-90" required>
+            <svg class="input-text__icon input-text__icon--phone" width="20" height="20">
+              <use xlink:href="img/sprite.svg#phone-icon"></use>
+            </svg>
           </li>
         </ul>
       </fieldset>
