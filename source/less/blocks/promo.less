@@ -9,7 +9,12 @@
 
     &::before {
       content: "";
-      background-image: url("../img/index-can-t.png");
+      background-image: image-set(
+        url("../img/index-can-t.webp") type("image/webp") 1x,
+        url("../img/index-can-t@2x.webp") type("image/webp") 2x,
+        url("../img/index-can-t.png") type("image/png") 1x,
+        url("../img/index-can-t@2x.png") type("image/png") 2x
+      );
       width: 709px;
       height: 609px;
       bottom: 0;
@@ -19,11 +24,6 @@
       transform: translateX(-50%);
       background-position: 0 0;
       background-repeat: no-repeat;
-
-      @media (min-width: @tablet-width) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: @tablet-width) and (min-resolution: 144dpi), (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
-        background-image: url("../img/index-can-t@2x.png");
-        background-size: 709px 609px;
-      }
     }
   }
 
@@ -33,33 +33,37 @@
     margin-bottom: 82px;
 
     &::before {
-      background-image: url("../img/index-can-d.png");
+      background-image: image-set(
+        url("../img/index-can-d.webp") type("image/webp") 1x,
+        url("../img/index-can-d@2x.webp") type("image/webp") 2x,
+        url("../img/index-can-d.png") type("image/png") 1x,
+        url("../img/index-can-d@2x.png") type("image/png") 2x
+      );
       z-index: 10;
       width: 552px;
       height: 499px;
       margin: 0 0 0 113px;
       bottom: unset;
       top: 31px;
-
-      @media (min-width: @desktop-width) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: @desktop-width) and (min-resolution: 144dpi), (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
-        background-image:  url("../img/index-can-d@2x.png");
-        background-size: 552px 499px;
-      }
     }
 
     &::after {
       content: "";
       position: absolute;
       background: url("../img/index-background-d.jpg") no-repeat right;
+      background-image: image-set(
+        url("../img/index-background-d.webp") type("image/webp") 1x,
+        url("../img/index-background-d@2x.webp") type("image/webp") 2x,
+        url("../img/index-background-d.jpg") type("image/jpg") 1x,
+        url("../img/index-background-d@2x.jpg") type("image/jpg") 2x
+      );
       width: 50%;
       height: calc(100% + 114px);
       top: -114px;
+      background-repeat: no-repeat;
+      background-position: right;
       background-size: cover;
       background-color: @green;
-
-      @media (min-width: @desktop-width) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: @desktop-width) and (min-resolution: 144dpi), (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
-        background-image:  url("../img/index-background-d@2x.jpg");
-      }
     }
   }
 }
@@ -91,20 +95,19 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url("../img/index-can-m.png");
+    background-image: image-set(
+        url("../img/index-can-m.webp") type("image/webp") 1x,
+        url("../img/index-can-m@2x.webp") type("image/webp") 2x,
+        url("../img/index-can-m.png") type("image/png") 1x,
+        url("../img/index-can-m@2x.png") type("image/png") 2x
+      );
     background-repeat: no-repeat;
     background-position: center;
     z-index: 10;
 
-    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image:  url("../img/index-can-m@2x.png");
-      background-size: 280px 270px;
-    }
-
     @media (min-width: @tablet-width) {
       display: none;
     }
-
   }
 
   @media (min-width: @tablet-width) {
@@ -139,13 +142,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../img/index-background-m.jpg") no-repeat center top;
+    background-image: image-set(
+      url("../img/index-background-m.webp") type("image/webp") 1x,
+      url("../img/index-background-m@2x.webp") type("image/webp") 2x,
+      url("../img/index-background-m.jpg") type("image/jpg") 1x,
+      url("../img/index-background-m@2x.jpg") type("image/jpg") 2x
+    );
     background-size: auto 100%;
-    background-color: @green;
-
-    @media (min-width: @tablet-width) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: @tablet-width) and (min-resolution: 144dpi), (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
-      background-image:  url("../img/index-background-m@2x.jpg");
-    }
+    background-repeat: no-repeat;
+    background-position: center top;
 
     @media (min-width: @tablet-width) {
       background: none;
