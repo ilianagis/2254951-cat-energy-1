@@ -62,7 +62,7 @@
     width: 100%;
     height: 2px;
     left: 0;
-    bottom: -8px;
+    bottom: -10px;
   }
 }
 
@@ -73,7 +73,9 @@
 }
 
 .nav-list--index .nav-list__link--current::after {
-  background: #ffffff;
+  @media (min-width: @desktop-width) {
+    background: #ffffff;
+  }
 }
 
 

@@ -109,51 +109,58 @@
     <section class="example">
       <div class="example__container">
         <div class="example__section">
-          <section class="example__column">
+          <section class="example__block example__block--light">
             <h2 class="example__title">Живой пример</h2>
-            <p class="example__text">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-              изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-            </p>
-            <div class="result">
-              <dl class="result__list">
-                <div class="result__wrapper">
-                  <dt class="result__title">5 кг</dt>
-                  <dd class="result__text">снижение веса</dd>
-                </div>
-                <div class="result__wrapper">
-                  <dt class="result__title">60 дней</dt>
-                  <dd class="result__text">затрачено времени</dd>
-                </div>
-              </dl>
-              <p class="result__total">
-                <span>Затраты на питание: </span>
-                <span>15 000 руб.</span>
+          </section>
+          <section class="example__block example__block--dark">
+            <div class="example__block-wrapper">
+              <p class="example__text">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+                изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
               </p>
+              <div class="result">
+                <dl class="result__list">
+                  <div class="result__wrapper">
+                    <dt class="result__title">5 кг</dt>
+                    <dd class="result__text">снижение веса</dd>
+                  </div>
+                  <div class="result__wrapper">
+                    <dt class="result__title">60 дней</dt>
+                    <dd class="result__text">затрачено времени</dd>
+                  </div>
+                </dl>
+                <p class="result__total">
+                  <span>Затраты на питание: </span>
+                  <span>15 000 руб.</span>
+                </p>
+              </div>
+            </div>
+            <div class="example__photo slider">
+              <div class="slider__wrapper">
+              <div class="slider__item slider__item--before">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-t@1x.webp 1x, img/cat-before-t@2x.webp 2x">
+                  <source type="image/webp" srcset="img/cat-before-m@1x.webp 1x, img/cat-before-m@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-before-t@1x.png, img/cat-before-t@2x.png 2x">
+                  <img class="slider__img" src="img/cat-before-m@1x.png" srcset="img/cat-before-m@2x.png 2x" alt="До">
+                </picture>
+              </div>
+              <div class="slider__item slider__item--after">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-t@1x.webp 1x, img/cat-after-t@2x.webp 2x">
+                  <source type="image/webp" srcset="img/cat-after-m@1x.webp 1x, img/cat-after-m@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-after-t@1x.png, img/cat-after-t@2x.png 2x">
+                  <img class="slider__img" src="img/cat-after-m@1x.png" srcset="img/cat-after-m@2x.png 2x" alt="После">
+                </picture>
+              </div>
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Переключить состояние слайдера</span>
+                <svg class="slider__toggle-svg" width="40" height="40">
+                  <use xlink:href="img/sprite.svg#toggle-icon"></use>
+                </svg>
+              </button>
             </div>
           </section>
-        </div>
-        <div class="example__photo slider">
-          <div class="slider__wrapper">
-          <div class="slider__item slider__item--before">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-t@1x.webp 1x, img/cat-before-t@2x.webp 2x">
-              <source type="image/webp" srcset="img/cat-before-m@1x.webp 1x, img/cat-before-m@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/cat-before-t@1x.png, img/cat-before-t@2x.png 2x">
-              <img class="slider__img" src="img/cat-before-m@1x.png" srcset="img/cat-before-m@2x.png 2x" alt="До">
-            </picture>
-          </div>
-          <div class="slider__item slider__item--after">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-t@1x.webp 1x, img/cat-after-t@2x.webp 2x">
-              <source type="image/webp" srcset="img/cat-after-m@1x.webp 1x, img/cat-after-m@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/cat-after-t@1x.png, img/cat-after-t@2x.png 2x">
-              <img class="slider__img" src="img/cat-after-m@1x.png" srcset="img/cat-after-m@2x.png 2x" alt="После">
-            </picture>
-          </div>
-          <button class="slider__toggle" type="button">
-            <span class="visually-hidden">Переключить состояние слайдера</span>
-          </button>
         </div>
       </div>
       </div>
