@@ -138,8 +138,8 @@
   display: inline-block;
   width: 17px;
   color: #000000;
-  top: -9px;
-  left: 27px;
+  top: -7px;
+  left: 17px;
   border-top: 2px solid #000000;
 
   &::after {
@@ -154,6 +154,11 @@
     border-bottom: 4px solid transparent;
     border-left: 6px solid #000000;
     transform: translateX(1px);
+  }
+
+  @media (min-width: @tablet-width) {
+    top: -9px;
+    left: 26px;
   }
 }
 
