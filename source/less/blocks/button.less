@@ -8,18 +8,19 @@
   padding: 10px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
+  cursor: pointer;
 
   &--light {
     .text-underline;
     color: #444444;
-    background: #f2f2f2;
+    background-color: #f2f2f2;
     display: block;
   }
 }
 
-.button__send {
-  margin-top: 21px;
-  margin-bottom: 23px;
+.button--send {
+  margin-top: 23px;
+  margin-bottom: 20px;
   border: none;
 
   @media (min-width: @tablet-width) {
@@ -29,26 +30,44 @@
     margin-right: 56px;
     margin-bottom: 28px;
     max-width: 300px;
+    margin-top: 20px;
   }
 
   @media (min-width: @desktop-width) {
     margin-right: 80px;
-    margin-top: 29px;
+    margin-top: 27px;
     width: 570px;
+    max-width: unset;
   }
 }
 
-.button__order {
+.button--order {
   border: none;
   margin-top: 13px;
   width: 100%;
 }
 
-.button__order--other {
+.button--order-other {
   margin-top: 0;
 
   @media (min-width: @desktop-width) {
     width: 244px;
     margin: 15px 0;
+    align-self: center;
   }
+}
+
+.button:hover,
+.button:focus {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--light:hover,
+.button--light:focus,
+.button--light:active {
+  background-color: #ebebeb;
 }

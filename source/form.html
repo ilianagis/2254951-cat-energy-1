@@ -9,7 +9,7 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="img/index-background.jpg" as="image">
+  <link rel="preload" href="img/index-background-m.jpg" as="image">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
   <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font">
 </head>
@@ -47,10 +47,12 @@
     </div>
   </header>
   <main class="page-form">
-    <h1 class="inner-title page-form__title">Подбор программы</h1>
-    <p class="inner-text page-form__text">
-      Заполните анкету, и мы подберем программу питания для вашего кота
-    </p>
+    <div class="page-form__article">
+      <h1 class="inner-title page-form__title">Подбор программы</h1>
+      <p class="inner-text page-form__text">
+        Заполните анкету, и мы подберем программу питания для вашего кота
+      </p>
+    </div>
     <form class="questionnaire" action="https://echo.htmlacademy.ru" method="post">
       <div class="questionnaire__wrapper">
         <fieldset class="questionnaire__fieldset fieldset-name">
@@ -74,8 +76,7 @@
           <legend class="visually-hidden">Вашему коту нужно:</legend>
           <ul class="fieldset-program__list">
             <li class="fieldset-program__item radio">
-              <input class="visually-hidden radio__input" type="radio" name="program" id="reduce" value="reduce"
-                checked>
+              <input class="visually-hidden radio__input" type="radio" name="program" id="reduce" value="reduce" checked>
               <label for="reduce" class="radio__label">Похудение</label>
             </li>
             <li class="fieldset-program__item radio">
@@ -98,13 +99,17 @@
         <ul class="fieldset-owner__list">
           <li class="fieldset-owner__item input-text">
             <label for="email" class="input-text__label">E-mail:*</label>
-            <input class="input-text__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com"
-              required>
+            <input class="input-text__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+            <svg class="input-text__icon input-text__icon--email" width="20" height="20">
+              <use xlink:href="img/sprite.svg#email-icon"></use>
+            </svg>
           </li>
           <li class="fieldset-owner__item input-text">
             <label for="number" class="input-text__label">Телефон:*</label>
-            <input class="input-text__input" type="number" name="number" id="number" placeholder="8 (960) 900-60-90"
-              required>
+            <input class="input-text__input" type="number" name="number" id="number" placeholder="8 (960) 900-60-90" required>
+            <svg class="input-text__icon input-text__icon--phone" width="20" height="20">
+              <use xlink:href="img/sprite.svg#phone-icon"></use>
+            </svg>
           </li>
         </ul>
       </fieldset>
@@ -114,8 +119,7 @@
             <span class="special-title__text">Комментарий</span>
           </span>
         </label>
-        <textarea class="fieldset-commentary__textarea" rows="8" name="commentary" id="textarea"
-          placeholder="Расскажите обо всех повадках кота" required></textarea>
+        <textarea class="fieldset-commentary__textarea" rows="8" name="commentary" id="textarea" placeholder="Расскажите обо всех повадках кота" required></textarea>
       </fieldset>
       <fieldset class="questionnaire__fieldset fieldset-extra">
         <legend class="special-title fieldset-extra__title">
@@ -123,7 +127,7 @@
             <span class="special-title__text">Дополнительно</span>
           </span>
         </legend>
-        <div class="wrapper wrapper__checkbox">
+        <div class="wrapper wrapper--checkbox">
           <label class="questionnaire__checkbox checkbox">
             <input class="checkbox__input" type="checkbox" name="sweetener" id="sweetener" checked>
             <span class="checkbox__text">Сахарозаменитель</span>
@@ -141,8 +145,8 @@
             <span class="checkbox__text">Витамины</span>
           </label>
         </div>
-        <div class="wrapper wrapper__button">
-          <button class="button button__send" type="submit">
+        <div class="wrapper wrapper--button">
+          <button class="button button--send" type="submit">
             Отправить заявку
           </button>
           <small>* — Обязательные поля</small>
@@ -161,11 +165,7 @@
       </section>
       <section class="map__iframe">
         <span class="visually-hidden">Как до нас добраться</span>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198025!2d30.3204724771085!3d59.938719162093825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1694106958161!5m2!1sru!2sru"
-          width="320" height="362" allowfullscreen=""
-          title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198025!2d30.3204724771085!3d59.938719162093825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1694106958161!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </section>
     </div>
@@ -199,7 +199,7 @@
           </a>
         </li>
       </ul>
-      <a class="htmlacademy-logo" href="https://htmlacademy.ru" aria-label="HTML Academy">
+      <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
         <span class="htmlacademy-logo__text">HTML Academy</span>
         <svg class="htmlacademy-logo-svg" width="27" height="34">
           <use xlink:href="img/sprite.svg#htmlacademy"></use>

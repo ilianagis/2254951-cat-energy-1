@@ -3,24 +3,28 @@
   padding: 26px 20px;
   justify-content: space-between;
   background-color: #ffffff;
+
   @media (min-width: @tablet-width) {
     padding: 61px 70px;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    top: 95px;
-    left: 109px;
     justify-content: space-between;
-    padding: 60px 78px 60px 80px;
+    padding: 60px 77px 60px 80px;
     gap: 88px;
+    position: relative;
+    left: 50%;
+    z-index: 10;
+    width: 565px;
+    box-sizing: border-box;
+    margin-left: -610px;
   }
 }
 
 .address--form,
 .address--catalog {
   @media (max-width: 1439px) {
-    .color(@gray)
+    .color(@gray);
   }
 }
 
@@ -32,6 +36,7 @@
   text-transform: uppercase;
   margin: 0;
   max-width: 140px;
+
   @media (min-width: @tablet-width) {
     max-width: 163px;
     font-size: 20px;
@@ -44,6 +49,7 @@
   line-height: 20px;
   margin: 0;
   max-width: 140px;
+
   @media (min-width: @tablet-width) {
     max-width: 157px;
     text-align: right;

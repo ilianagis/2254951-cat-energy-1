@@ -1,19 +1,23 @@
 .fieldset-program {
-  padding: 22px 20px 19px;
+  padding: 21px 20px 19px;
   margin: 0;
   border: none;
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: @tablet-width) {
-    padding: 23px 26px 27px;
+    padding: 25px 26px 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 26px 27px 23px;
   }
 }
 
 .fieldset-program--border {
   @media (min-width: @tablet-width) {
     border: 1px solid #e7e7e7;
-    margin: 0 70px 34px;
+    margin: 0 70px;
   }
 
   @media (min-width: @desktop-width) {
@@ -29,7 +33,11 @@
 }
 
 .fieldset-program__item {
-margin-bottom: 13px;
+  margin-bottom: 13px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 14px;
+  }
 }
 
 .fieldset-program__item:last-child {

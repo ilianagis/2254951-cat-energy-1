@@ -3,15 +3,15 @@
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
-    padding: 0 34px 0 30px;
+    padding: 0 32px 0 30px;
   }
+
   @media (min-width: @desktop-width) {
     padding: 0;
     width: 1220px;
     margin: 0 auto;
     position: relative;
     z-index: 10;
-
   }
 }
 
@@ -21,15 +21,16 @@
   background: url("../img/logo-text.svg") no-repeat center 22px;
 
   @media (min-width: @tablet-width) {
-    background: url("../img/logo-text.svg") no-repeat 73px 16px;
     display: flex;
     flex-direction: row-reverse;
     padding-top: 0;
     margin: 25px 0 65px 0;
+    background: none;
+    z-index: 1;
   }
+
   @media (min-width: @desktop-width) {
     margin: 55px 0 0 0;
-    background: url("../img/logo-text-desktop.svg") no-repeat 84px 18px;
   }
 }
 
@@ -37,9 +38,19 @@
   position: absolute;
   top: 12px;
   left: 20px;
+  opacity: 1;
 
   @media (min-width: @tablet-width) {
     top: 0;
     left: 0;
   }
+}
+
+.main-header__logo:hover,
+.main-header__logo:focus {
+  opacity: 0.8;
+}
+
+.main-header__logo:active {
+  opacity: 0.6;
 }
