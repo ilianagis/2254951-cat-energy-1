@@ -1,0 +1,17 @@
+.page__body {
+  position: relative;
+}
+
+.page__body--index {
+  @media (min-width: @desktop-width) {
+      &::before {
+          content: "";
+          width: 50%;
+          position: absolute;
+          right: 0;
+          height: 720px;
+          background: #61a53a;
+          top: -81px;
+      }
+  }
+}
