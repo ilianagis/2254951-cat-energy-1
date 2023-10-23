@@ -53,10 +53,14 @@
   display: block;
 }
 
-.radio__label:hover::before,
-.radio__label:focus::before {
+.radio__label:hover::before{
   border: 1px solid #bababa;
 }
+
+.radio__input:focus + .radio__label::before {
+  border: 1px solid #444444;
+}
+
 
 .radio__label:active::before,
 .radio__label:active {
